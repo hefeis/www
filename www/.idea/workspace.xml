@@ -2,106 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70d8c5d0-7e72-409f-8e8d-8209afc6e878" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/1911.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/key/priv.key" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/.env.example" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/.idea/1911.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/.idea/php.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/.styleci.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/app/Console/Kernel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/app/Exceptions/Handler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/app/Http/Controllers/Auth/ConfirmPasswordController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/app/Http/Controllers/Auth/ForgotPasswordController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/app/Http/Controllers/Auth/VerificationController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/app/Http/Controllers/Controller.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/app/Http/Controllers/Vx/TextController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/app/Http/Kernel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/app/Http/Middleware/Authenticate.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/app/Http/Middleware/CheckForMaintenanceMode.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/app/Http/Middleware/EncryptCookies.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/app/Http/Middleware/TrimStrings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/app/Http/Middleware/TrustProxies.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/app/Providers/AppServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/app/Providers/AuthServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/app/Providers/BroadcastServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/app/Providers/EventServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/app/Providers/RouteServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/app/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/artisan" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/bootstrap/app.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/bootstrap/cache/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/config/app.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/config/auth.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/config/broadcasting.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/config/cache.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/config/database.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/config/filesystems.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/config/hashing.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/config/logging.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/config/mail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/config/queue.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/config/services.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/config/session.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/config/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/database/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/database/factories/UserFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/database/seeds/DatabaseSeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/phpunit.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/public/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/public/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/public/web.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/resources/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/resources/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/resources/lang/en/auth.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/resources/lang/en/pagination.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/resources/lang/en/passwords.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/resources/lang/en/validation.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/resources/sass/app.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/resources/views/welcome.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/routes/api.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/routes/channels.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/routes/console.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/routes/web.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/server.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/storage/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/storage/app/public/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/storage/framework/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/storage/framework/cache/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/storage/framework/cache/data/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/storage/framework/sessions/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/storage/framework/testing/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/storage/framework/views/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/storage/logs/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/tests/CreatesApplication.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/tests/Feature/ExampleTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/tests/TestCase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/tests/Unit/ExampleTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1911/webpack.mix.js" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/key/pub.api.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/1911.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/1911.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Vx/TextController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Vx/TextController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/key/priv.key" beforeDir="false" afterPath="$PROJECT_DIR$/storage/key/priv.key" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="540">
-              <caret line="21" column="21" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="21" />
+              <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -135,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Vx/TextController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+            <state relative-caret-position="495">
+              <caret line="74" column="42" lean-forward="true" selection-start-line="74" selection-start-column="42" selection-end-line="74" selection-end-column="42" />
               <folding>
                 <element signature="e#43#79#0#PHP" expanded="true" />
               </folding>
@@ -154,8 +65,9 @@
       <list>
         <option value="$PROJECT_DIR$/app/Http/Controllers/TextController.php" />
         <option value="$PROJECT_DIR$/storage/key/priv.key" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
+        <option value="$PROJECT_DIR$/storage/key/pub.key" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Vx/TextController.php" />
       </list>
     </option>
@@ -257,7 +169,7 @@
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="775" />
     <option name="y" value="1" />
     <option name="width" value="974" />
@@ -330,7 +242,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="Y:/api" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -365,18 +277,19 @@
       <workItem from="1594781936341" duration="488000" />
       <workItem from="1594782450839" duration="7741000" />
       <workItem from="1594804783232" duration="2011000" />
-      <workItem from="1595486350964" duration="6706000" />
+      <workItem from="1595486350964" duration="7317000" />
+      <workItem from="1595558706006" duration="968000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16946000" />
+    <option name="totallyTimeSpent" value="18525000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14887941" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18089648" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -419,10 +332,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
+    <entry file="file://$PROJECT_DIR$/storage/key/pub.api.key">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="21" />
+        <state relative-caret-position="360">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -433,10 +346,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Vx/TextController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+        <state relative-caret-position="495">
+          <caret line="74" column="42" lean-forward="true" selection-start-line="74" selection-start-column="42" selection-end-line="74" selection-end-column="42" />
           <folding>
             <element signature="e#43#79#0#PHP" expanded="true" />
           </folding>

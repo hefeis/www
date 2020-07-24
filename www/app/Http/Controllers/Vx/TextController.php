@@ -55,11 +55,31 @@ class TextController extends Controller
         echo $deaes_data;
     }
     function aes2(){
-        $enpub_data=request()->post('enpub_data');
-        $content=file_get_contents(storage_path('key/priv.key'));
-        $key=openssl_get_privatekey($content);
-        $enpub_data=base64_decode($enpub_data);
-        openssl_private_decrypt($enpub_data,$depri_data,$key);
-        echo $depri_data;
+        if(request()->isMethod('post')){
+            $enpub_data=request()->post('enpub_data');
+            $content=file_get_contents(storage_path('key/priv.key'));
+            $key=openssl_get_privatekey($content);
+            $enpub_data=base64_decode($enpub_data);
+            openssl_private_decrypt($enpub_data,$depri_data,$key);
+            echo $depri_data;
+            die;
+        }
+        if(request()->isMethod('get')){
+            $data="饿了才吃饭呀";
+            $content=file_get_contents(storage_path('key/pub.api.key'));
+            $key=openssl_get_publickey($content);
+            openssl_public_encrypt($data,$enpub_data,$key);
+            $enpub_data=base64_encode($enpub_data);
+            echo "www解密前:  ".$enpub_data;
+            echo '<hr>';
+            $url="http://api.com/vx/aes2";
+            $data=['form_params' => ['enpub_data'=>$enpub_data]];
+            $client=new Client();
+            $response = $client->request('post',$url,$data);
+            $result=$response->getBody();
+            echo "www解密后  ".$result;echo '<hr>';
+        }
+
+
     }
 }

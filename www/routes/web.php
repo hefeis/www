@@ -19,4 +19,4 @@ Route::get('/vx/text2','Vx\TextController@token2');
 Route::get('/vx/text3','Vx\TextController@token3');
 Route::get('/vx/test','Vx\TextController@test');
 Route::post('/vx/aes1','Vx\TextController@aes1');
-Route::post('/vx/aes2','Vx\TextController@aes2');
+Route::any('/vx/aes2','Vx\TextController@aes2');
