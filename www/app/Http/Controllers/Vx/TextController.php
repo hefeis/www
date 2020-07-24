@@ -70,10 +70,12 @@ class TextController extends Controller
             $key=openssl_get_publickey($content);
             openssl_public_encrypt($data,$enpub_data,$key);
             $enpub_data=base64_encode($enpub_data);
+            $key2="1911php";
+            $sign=md5($key2.$enpub_data);
             echo "www解密前:  ".$enpub_data;
             echo '<hr>';
             $url="http://api.com/vx/aes2";
-            $data=['form_params' => ['enpub_data'=>$enpub_data]];
+            $data=['form_params' => ['enpub_data'=>$enpub_data,'sign'=>$sign]];
             $client=new Client();
             $response = $client->request('post',$url,$data);
             $result=$response->getBody();
