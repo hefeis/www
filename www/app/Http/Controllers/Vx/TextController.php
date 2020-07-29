@@ -57,11 +57,16 @@ class TextController extends Controller
     function aes2(){
         if(request()->isMethod('post')){
             $enpub_data=request()->post('enpub_data');
+            $sign=request()->post('sign');
             $content=file_get_contents(storage_path('key/priv.key'));
+            $content2=file_get_contents(storage_path('key/pub.api.key'));
             $key=openssl_get_privatekey($content);
+            $key2=openssl_get_publickey($content2);
+            $response=openssl_verify($enpub_data,$sign,$key2);
+            echo "签名: ".$response;echo '<hr>';
             $enpub_data=base64_decode($enpub_data);
             openssl_private_decrypt($enpub_data,$depri_data,$key);
-            echo $depri_data;
+            echo "api解密后  ".$depri_data;
             die;
         }
         if(request()->isMethod('get')){
@@ -84,4 +89,51 @@ class TextController extends Controller
 
 
     }
+        function header1(){
+            echo 1;
+        }
+        function  alipay(){
+        //请求参数
+            $param1=[
+              'out_trade_no'   =>time().'456789876',
+              'product_code'   =>'FAST_INSTANT_TRADE_PAY',
+              'total_amount'   =>1000.00,
+              'subject'   =>'Amani'
+            ];
+        //公共参数
+            $param2=[
+                'app_id' =>'2021000117603552',
+                'method' =>'alipay.trade.page.pay',
+                'charset' =>'utf-8',
+                'sign_type' =>'RSA2',
+                'timestamp' =>date('Y-m-d H:i:s'),
+                'version' =>'1.0',
+                'return_url'=>'http://hefei.phpclub.icu/alipay/return',
+                'notify_url'=>'http://hefei.phpclub.icualipay/notify',
+                'biz_content' =>json_encode($param1),
+            ];
+            ksort($param2);
+            $str="";
+            foreach($param2 as $key=>$val){
+                $str.= $key.'='.$val.'&';
+            }
+            $str=rtrim($str,'&');
+            $sign=$this->sign($str);
+            $url="https://openapi.alipaydev.com/gateway.do?".$str.'&sign='.urlencode($sign);
+            return redirect($url);
+        }
+        function sign($data){
+            $content=file_get_contents(storage_path('key/priv.key'));
+            $key=openssl_get_privatekey($content);
+            openssl_sign($data,$sign,$key,OPENSSL_ALGO_SHA256);
+            openssl_free_key($key);
+            $sign=base64_encode($sign);
+            return $sign;
+        }
+        function alipay_return(){
+
+        }
+        function alipay_notify(){
+
+        }
 }
