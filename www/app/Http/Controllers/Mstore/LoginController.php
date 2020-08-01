@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Mstore;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use GuzzleHttp\Client;
+use Illuminate\Support\Facades\Cookie;
 
 class LoginController extends Controller
 {
@@ -21,6 +22,14 @@ class LoginController extends Controller
         $response = $client->request('post',$url,$data);
         $result=$response->getBody();
         $result=json_decode($result,true);
-        dd($result);
+        if($result['data']['token']){
+            $token=$result['data']['token'];
+            cookie('token',$token);
+            return redirect('/mstore/index?token='.$token);
+        }else{
+            return $result;
+        }
+
+
     }
 }

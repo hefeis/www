@@ -28,3 +28,5 @@ Route::get('/mstore/reg','Mstore\RegController@add');
 Route::post('/reg/adddo','Mstore\RegController@adddo');
 Route::get('/mstore/login','Mstore\LoginController@add');
 Route::post('login/adddo','Mstore\LoginController@adddo');
+Route::get('/mstore/index','Mstore\IndexController@index');
+Route::get('/mstore/goods/{id}','Mstore\GoodsController@goods');
